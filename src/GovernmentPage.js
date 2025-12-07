@@ -64,7 +64,7 @@ function GovernmentPage() {
           // Set up provider and contract
           const provider = new BrowserProvider(window.ethereum);
           const signer = await provider.getSigner();
-          const contractAddress = "0xfb62b875157ebf38857424C35589ea9daC3B30Da";
+          const contractAddress = "0x5D3BF47515D16BcA4c18C9F7C6f640cd78E42c4C";
         //   const contract = new ethers.Contract(contractAddress, contractABI, signer);
           const contract = new Contract(contractAddress, contractABI, signer);
           setContract(contract);
